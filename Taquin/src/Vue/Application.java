@@ -6,13 +6,10 @@ import Controler.AbstractControler;
 import observer.Observer;
 
 public abstract class Application extends JFrame implements Observer{
-
-	private static final long serialVersionUID = 1L;
-	
 	protected JPanel panneau = new JPanel();
 	protected JButton[] tabPieces;
 	protected AbstractControler controler;
-	protected JLabel win= new JLabel("Vous avez gagné");
+	protected JLabel win= new JLabel("Vous avez gagnÃ©");
 	
 	public Application(AbstractControler controler){                
 		this.controler = controler;
@@ -34,7 +31,7 @@ public abstract class Application extends JFrame implements Observer{
 
 	
 	public void update() {
-		this.panneau.removeAll();;
+		this.panneau.removeAll();
 		if(this.controler.getPlateau().res()) {
 			this.panneau.add(win);
 		}

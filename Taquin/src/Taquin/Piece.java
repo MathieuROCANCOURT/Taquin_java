@@ -43,7 +43,7 @@ public class Piece {
         return this.nom + " ";
     }
 
-    public boolean verifier(int colonnes) { //Verifie si le nom et le numero d'emplacement correspondent
+    public boolean verifier(int colonnes) { //Vérifie si le nom et le numéro d'emplacement correspondent
         return ((this.ligne - 1) * colonnes + this.colonne == nom);
     }
 }

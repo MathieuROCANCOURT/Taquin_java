@@ -7,14 +7,14 @@ import Vue.Events;
 
 public class Test {
 
-	public static void main(String[] args) {
-    
-		    AbstractPlateau taquin = new Plateau (7,7); //Changer la dimension du Taquin
-		 
-		    AbstractControler controler = new TaquinControler(taquin);
+    public static void main(String[] args) {
 
-		    Application window = new Events(controler);
+        AbstractPlateau taquin = new Plateau(3, 3); //Changer la dimension du Taquin
 
-		    taquin.addObserver(window);
-		   }
+        AbstractControler controler = new TaquinControler(taquin);
+
+        Application window = new Events(controler);
+
+        taquin.addObserver(window);
+    }
 }
